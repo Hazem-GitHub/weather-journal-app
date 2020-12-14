@@ -5,16 +5,16 @@ This app is used to get live weather conditions and temperature in a user friend
 
 ## User Interface
 The User Interface contains:
-    - Zipcode Input field
-    - User Feelings Input field (optional)
-    - Generate Button
-    - Recent Entry Weather Card data:
-        - Location: {city}, {country}
-        - Date
-        - Weather condition
-        - Weather condition Icon
-        - Temperature {current Temp. in °C, Max. Temp. in °C, Min. Temp. in °C}
-        - User Feelings (if available)
+1. Zipcode Input field
+2. User Feelings Input field (optional)
+3. Generate Button
+4. Recent Entry Weather Card data:
+- Location: {city}, {country}
+- Date
+- Weather condition
+- Weather condition Icon
+- Temperature {current Temp. in °C, Max. Temp. in °C, Min. Temp. in °C}
+- User Feelings (if available)
 
 
 ## Decisions
