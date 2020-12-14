@@ -80,7 +80,7 @@ genBtn.addEventListener('click', (e)=>{
 */
 const getWeatherAPIData = async ( url ) => {
 
-    const request = await fetch (url);
+    const request = await fetch(url);
     try {
         const weatherAPIData = await request.json();
         // Error checking
@@ -94,7 +94,7 @@ const getWeatherAPIData = async ( url ) => {
             return weatherAPIData;
         }
     } catch(error) {
-        console.log("API Error", error)
+        console.log("API Error", error);
     }
 
 };
