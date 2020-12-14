@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Weather Journal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans:700|Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="app">
+
+    <div class ="headline">
+      <i class="fas fa-temperature-high"></i> Weather Journal App
+    </div>
+
+    <div class="wrapper">
+
+      <div class="container">
+        <div class ="holder field-holder zip">
+          <label for="zip"><i class="fas fa-home"></i> Zip Code</label>
+          <input type="text" name="zip" id="zip" placeholder="Enter zip code here" maxlength="5">
+          <label id="zipcode-error" class="error"></label>
+        </div>
+        <div class ="holder field-holder feel">
+          <label for="feelings"><i class="far fa-comment-dots"></i> How are you feeling today?</label>
+          <textarea class= "myInput" name="feelings" id="feelings" placeholder="Enter your feelings here" rows="5" maxlength="250"></textarea>
+        </div>
+        <div class="holder field-holder">
+          <button id="generate" type="button"><i class="fas fa-cog"></i> Generate </button>
+        </div>
+      </div>
+
+      <div class="container">
+        <div id="entry-container" class ="holder">
+          <div class="title">Most Recent Entry</div>
+          <div id="entry-holder">
+            <div class="entry">
+              <label for="location"><i class="fas fa-map-marker-alt"></i> Location </label>
+              <span id="location" class="entry-value"></span> 
+            </div>
+            <div class="entry">
+              <label for="date"><i class="far fa-calendar-alt"></i> Date </label>
+              <span id="date" class="entry-value"></span> 
+            </div>
+            <div class="entry">
+              <label for="temp"><i class="fas fa-temperature-high"></i> Temperature </label>
+              <div>
+                <span>Current: </span>
+                <span id="temp" class="entry-value"></span>
+                <span>°C</span>
+              </div>
+              <div>
+                <span>Maximum: </span>
+                <span id="temp-max" class="entry-value"></span>
+                <span>°C</span>
+              </div>
+              <div>
+                <span>Minimum: </span>
+                <span id="temp-min" class="entry-value"></span>
+                <span>°C</span>
+              </div>
+            </div>
+            <div class="entry">
+              <label for="weather">Weather condition </label>
+              <div class="icon-text">
+                <span id="icon" class="entry-value"></span>
+                <span id="weather" class="entry-value"></span> 
+              </div>
+            </div>
+            <div class="entry">
+              <label for="content"><i class="far fa-comment-dots"></i> Your Feelings </label>
+              <span id="content" class="entry-value"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+<!-- Scripts -->
+<script src="app.js" type="text/javascript"></script>
+</body>
+</html>
